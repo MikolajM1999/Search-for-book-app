@@ -9,6 +9,7 @@ export default class SearchingPage extends React.Component {
 
       this.state = {
          lastSubmition: 0,
+         pixelsFromTop: 0,
          error: '',
          totalBooks: 0,
          typedTitle: '',
@@ -52,9 +53,9 @@ export default class SearchingPage extends React.Component {
       return (
          <div>
             <form onSubmit={this.onSubmit}>
-               <input placeholder="Title" name="title" required />
-               <input placeholder="Author" name="author" />
-               <input placeholder="(EN,FR,PL,...)" name="language" />
+               <input placeholder="Title" name="title" required autoComplete="off" />
+               <input placeholder="Author" name="author" autoComplete="off" />
+               <input placeholder="(EN,FR,PL,...)" name="language" autoComplete="off" />
                <button>Search</button>
             </form>
             {this.state.error && <p>{this.state.error}</p>}

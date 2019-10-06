@@ -19,9 +19,11 @@ const renderBooks = async (response, that) => {
       const bookImageLink = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail || book.volumeInfo.imageLinks.smallThumbnail : '../img/unknown_book.png'
       const bookFullTitle = book.volumeInfo.title || "The book doesn't have a title"
       const bookShortDescription = prepareTheDescription(book)
+      const bookCanonicalVolumeLink = book.volumeInfo.canonicalVolumeLink ? book.volumeInfo.canonicalVolumeLink : ''
+      const publishedDate = book.volumeInfo.publishedDate ? book.volumeInfo.publishedDate : 'unknown'
       const bookId = book.id
 
-      const aBook = { bookImageLink, bookFullTitle, bookShortDescription, bookId }
+      const aBook = { bookImageLink, bookFullTitle, bookShortDescription, bookCanonicalVolumeLink, publishedDate, bookId }
 
       that.setState(() => ({ searchingBooks: [...that.state.searchingBooks, aBook] }))
    })

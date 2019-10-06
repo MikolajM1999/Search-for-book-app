@@ -1,9 +1,12 @@
 import React from 'react'
 
-const BookListItem = ({ bookImageLink, bookFullTitle, bookShortDescription }) => (
+const BookListItem = ({ bookImageLink, bookFullTitle, bookShortDescription, publishedDate, bookCanonicalVolumeLink }) => (
    <div>
-      <img src={bookImageLink} alt={bookFullTitle} width="128" height="194" />
-      <h2>{bookFullTitle}</h2>
+      <a href={bookCanonicalVolumeLink} target="_blank" rel="noopener noreferrer search">
+         <img src={bookImageLink} alt={bookFullTitle} width="128" height="194" />
+      </a>
+      <p>{publishedDate}</p>
+      <h3>{bookFullTitle}</h3>
       <p>{bookShortDescription}</p>
    </div>
 )
