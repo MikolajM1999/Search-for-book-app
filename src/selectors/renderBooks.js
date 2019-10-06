@@ -1,6 +1,6 @@
 import prepareTheDescription from './prepareTheDescription'
 
-const renderBooks = async (response, that) => {
+export default async (response, that) => {
    const data = await response.json()
 
    that.setState(() => ({ totalBooks: data.totalItems }))
@@ -19,7 +19,7 @@ const renderBooks = async (response, that) => {
       const bookImageLink = book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail || book.volumeInfo.imageLinks.smallThumbnail : '../img/unknown_book.png'
       const bookFullTitle = book.volumeInfo.title || "The book doesn't have a title"
       const bookShortDescription = prepareTheDescription(book)
-      const bookCanonicalVolumeLink = book.volumeInfo.canonicalVolumeLink ? book.volumeInfo.canonicalVolumeLink : ''
+      const bookCanonicalVolumeLink = book.volumeInfo.canonicalVolumeLink ? book.volumeInfo.canonicalVolumeLink : 'https://www.google.com/'
       const publishedDate = book.volumeInfo.publishedDate ? book.volumeInfo.publishedDate : 'unknown'
       const bookId = book.id
 
@@ -28,5 +28,3 @@ const renderBooks = async (response, that) => {
       that.setState(() => ({ searchingBooks: [...that.state.searchingBooks, aBook] }))
    })
 }
-
-export default renderBooks
