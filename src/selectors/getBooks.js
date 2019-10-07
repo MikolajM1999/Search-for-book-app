@@ -4,7 +4,7 @@ export default async (that) => {
    if (navigator.onLine) {
       console.log(`User has internet connection? - ${navigator.onLine}`)
 
-      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=intitle:${that.state.typedTitle}+inauthor:${that.state.typedAuthor}&maxResults=12&langRestrict=${that.state.typedLanguage}&printType=books`)
+      const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=intitle:${that.state.typedTitle}+inauthor:${that.state.typedAuthor}&maxResults=20&langRestrict=${that.state.typedLanguage}&printType=books`)
 
       if (response.status === 200) {
          renderBooks(response, that)

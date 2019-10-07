@@ -4,7 +4,7 @@ import Header from './Header'
 
 const Dashboard = () => {
    return (
-      <div>
+      <div className="page">
          <Header />
          <SearchingPage />
       </div>

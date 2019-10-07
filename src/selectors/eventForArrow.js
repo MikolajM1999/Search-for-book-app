@@ -1,7 +1,7 @@
 document.addEventListener('scroll', () => {
    if (window.pageYOffset > 2000) {
-      document.getElementById('arrow').classList.add('arrow--active')
+      document.querySelector('.arrow-up-button').classList.add('arrow-up-button--active')
    } else {
-      document.getElementById('arrow').classList.remove('arrow--active')
+      document.querySelector('.arrow-up-button').classList.remove('arrow-up-button--active')
    }
 })
