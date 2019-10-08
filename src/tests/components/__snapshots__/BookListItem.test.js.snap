@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render BookListItem correctly 1`] = `
+<div
+  className="book container-for-books__book-item"
+>
+  <a
+    className="book__image-link"
+    rel="noopener noreferrer search"
+    target="_blank"
+  >
+    <img
+      height="194"
+      width="128"
+    />
+  </a>
+  <div
+    className="div-info book__right-side-info"
+  >
+    <p
+      className="div-info__item book__published-date"
+    />
+    <h3
+      className="div-info__item book__full-title"
+    />
+    <p
+      className="div-info__item book__short-description"
+    />
+  </div>
+</div>
+`;

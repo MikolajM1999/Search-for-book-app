@@ -1,0 +1,108 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should correctly set Error to state on submit when typed language is incorrect 1`] = `
+<main
+  className="main page__main"
+>
+  <form
+    className="form main__form"
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="title"
+      placeholder="title of a book"
+      required={true}
+    />
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="author"
+      placeholder="author of a book"
+    />
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="language"
+      placeholder="choose language - en,fr,pl,..."
+    />
+    <button
+      className="button form__button"
+    >
+      Search
+    </button>
+  </form>
+  <p
+    className="main__error"
+  >
+    Enter only two letters in the language selection field or leave it empty
+  </p>
+  <button
+    className="arrow-up-button"
+    onClick={[Function]}
+  >
+    <img
+      alt="arrow up"
+      className="arrow-up-button__image"
+      height="80"
+      src="/img/arrowUp.jpg"
+      width="80"
+    />
+  </button>
+  <BookList
+    searchingBooks={Array []}
+  />
+</main>
+`;
+
+exports[`should render SearchingPage correctly 1`] = `
+<main
+  className="main page__main"
+>
+  <form
+    className="form main__form"
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="title"
+      placeholder="title of a book"
+      required={true}
+    />
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="author"
+      placeholder="author of a book"
+    />
+    <input
+      autoComplete="off"
+      className="form__input"
+      name="language"
+      placeholder="choose language - en,fr,pl,..."
+    />
+    <button
+      className="button form__button"
+    >
+      Search
+    </button>
+  </form>
+  <button
+    className="arrow-up-button"
+    onClick={[Function]}
+  >
+    <img
+      alt="arrow up"
+      className="arrow-up-button__image"
+      height="80"
+      src="/img/arrowUp.jpg"
+      width="80"
+    />
+  </button>
+  <BookList
+    searchingBooks={Array []}
+  />
+</main>
+`;

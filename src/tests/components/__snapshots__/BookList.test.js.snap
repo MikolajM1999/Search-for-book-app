@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render BookList correctly with books 1`] = `
+<div
+  className="container-for-books"
+>
+  <BookListItem
+    bookCanonicalVolumeLink="https://www.google.com/"
+    bookFullTitle="Title for testing 1"
+    bookId="1"
+    bookImageLink="./img/unknown_book.png"
+    bookShortDescription="word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21."
+    key="1"
+    publishedDate="1971"
+  />
+  <BookListItem
+    bookCanonicalVolumeLink="https://www.google.com/"
+    bookFullTitle="Title for testing 2"
+    bookId="2"
+    bookImageLink="./img/unknown_book.png"
+    bookShortDescription="word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22."
+    key="2"
+    publishedDate="1972"
+  />
+  <BookListItem
+    bookCanonicalVolumeLink="https://www.google.com/"
+    bookFullTitle="Title for testing 3"
+    bookId="3"
+    bookImageLink="./img/unknown_book.png"
+    bookShortDescription="word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12 word13 word14 word15 word16 word17 word18 word19 word20 word21 word22 word23."
+    key="3"
+    publishedDate="1973"
+  />
+</div>
+`;
+
+exports[`should render BookList correctly with default empty array 1`] = `
+<div
+  className="container-for-books"
+>
+  <div
+    className="info"
+  >
+    <span
+      className="info__message"
+    >
+      Search for your book, fill at least title field
+    </span>
+  </div>
+</div>
+`;

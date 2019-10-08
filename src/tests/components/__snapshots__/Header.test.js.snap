@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render Header correctly 1`] = `
+<header
+  className="header page__header"
+>
+  <h1
+    className="header__title"
+  >
+    Search-For-Book-App
+  </h1>
+</header>
+`;
